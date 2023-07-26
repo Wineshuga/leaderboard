@@ -1,10 +1,105 @@
-body {
-    background-color: bisque;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.hello {
-    color: red;
-    background: url('./icon.jpg') no-repeat;
-    background-size: contain;
-    height: 30vh;
+header {
+  margin: 0.5rem;
+}
+
+main {
+  margin: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.lists > h2 {
+  display: inline;
+  margin-right: 1rem;
+}
+
+.lists > button {
+  padding: 0.2rem;
+}
+
+.leaders-list {
+  border: 2px solid;
+  margin: 1.5rem auto;
+  width: 90%;
+}
+
+.leaders-list > li {
+  padding: 0.3rem;
+}
+
+.leaders-list > li:nth-child(even) {
+  background-color: #ddd;
+}
+
+fieldset {
+  width: 90%;
+  margin: 0.5rem auto;
+  border: none;
+}
+
+input[type=text],
+input[type=number] {
+  width: 100%;
+  display: block;
+  margin: 1rem auto;
+  padding: 0.3rem;
+}
+
+input[type=button] {
+  padding: 0.3rem;
+  float: right;
+}
+
+@media (min-width: 660px) {
+  h1 {
+    font-size: 52px;
   }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .lists > h2 {
+    margin-right: 1rem;
+  }
+
+  main {
+    flex-direction: row;
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  .lists,
+  form {
+    width: 45%;
+  }
+
+  .lists {
+    margin-left: 1rem;
+  }
+
+  .leaders-list,
+  fieldset {
+    margin: 1rem 0;
+  }
+}
+
+@media (min-width: 900px) {
+  h2 {
+    font-size: 30px;
+  }
+
+  .lists > h2 {
+    margin-right: 4rem;
+  }
+}
