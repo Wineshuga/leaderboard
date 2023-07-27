@@ -27,6 +27,11 @@ main {
   padding: 0.2rem;
 }
 
+.leaders-box > p {
+  text-align: center;
+  margin: 3rem 0;
+}
+
 .leaders-list {
   border: 2px solid;
   margin: 1.5rem auto;
