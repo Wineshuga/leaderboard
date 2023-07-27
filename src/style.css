@@ -7,8 +7,17 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+body {
+  background-color: burlywood;
+}
+
 header {
   margin: 0.5rem;
+}
+
+h1,
+h2 {
+  color: #fff;
 }
 
 main {
@@ -30,6 +39,8 @@ main {
 .leaders-box > p {
   text-align: center;
   margin: 3rem 0;
+  color: #fff;
+  font-weight: 600;
 }
 
 .leaders-list {
@@ -58,11 +69,25 @@ input[type=number] {
   display: block;
   margin: 1rem auto;
   padding: 0.3rem;
+  border-color: burlywood;
+  border-radius: 8px;
 }
 
-input[type=button] {
+input[type=submit] {
   padding: 0.3rem;
   float: right;
+}
+
+input[type=submit],
+button {
+  background-color: burlywood;
+  border-color: #fff;
+}
+
+input[type=submit]:hover,
+button:hover {
+  background-color: #fff;
+  border-color: burlywood;
 }
 
 @media (min-width: 660px) {
