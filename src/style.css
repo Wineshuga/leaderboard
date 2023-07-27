@@ -32,6 +32,12 @@ main {
   margin-right: 1rem;
 }
 
+input[type=submit],
+button {
+  background-color: burlywood;
+  border-color: #fff;
+}
+
 .lists > button {
   padding: 0.2rem;
 }
@@ -76,12 +82,6 @@ input[type=number] {
 input[type=submit] {
   padding: 0.3rem;
   float: right;
-}
-
-input[type=submit],
-button {
-  background-color: burlywood;
-  border-color: #fff;
 }
 
 input[type=submit]:hover,
