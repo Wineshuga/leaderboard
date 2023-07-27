@@ -13,13 +13,16 @@
         <section class="lists">
             <h2>Recent scores</h2>
             <button type="button">Refresh</button>
+            <section class="leaders-box">
+                <p>Add your name and score</p>
+            </section>
         </section>
         <form>
             <h2>Add your score</h2>
             <fieldset>
-                <input type="text" name="your-name" id="your-name" placeholder="Your name">
-                <input type="number" name="your-score" id="your-score" placeholder="Your score">
-                <input type="button" value="Submit">
+                <input type="text" name="your-name" id="your-name" placeholder="Your name" required>
+                <input type="number" name="your-score" id="your-score" placeholder="Your score" required>
+                <input type="submit" value="Submit">
             </fieldset>
         </form>
     </main>
