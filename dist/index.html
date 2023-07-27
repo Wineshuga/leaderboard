@@ -10,24 +10,20 @@
         <h1>LeaderBoard</h1>
     </header>
     <main>
-        <section>
+        <section class="lists">
             <h2>Recent scores</h2>
-            <button class="refresh-btn">Refresh</button>
-            <ul class="names">
-                <li>Name: 100</li>
-                <li>Name: 10</li>
-                <li>Name: 56</li>
-                <li>Name: 20</li>
-                <li>Name: 44</li>
-                <li>Name: 90</li>
-                <li>Name: 26</li>
-            </ul>
+            <button type="button">Refresh</button>
+            <section class="leaders-box">
+                <p>Add your name and score</p>
+            </section>
         </section>
         <form>
             <h2>Add your score</h2>
-            <input type="text" name="your-name" id="your-name">
-            <input type="number" name="your-score" id="your-score">
-            <input type="button" value="Submit">
+            <fieldset>
+                <input type="text" name="your-name" id="your-name" placeholder="Your name" required>
+                <input type="number" name="your-score" id="your-score" placeholder="Your score" required>
+                <input type="submit" value="Submit">
+            </fieldset>
         </form>
     </main>
 </body>
